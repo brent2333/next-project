@@ -27,7 +27,7 @@ export const validateJWT = async (jwt: string | Uint8Array) => {
     return payload.payload as any;
   };
 
-  export const getUserFromCookie = async (cookies: { get: (arg0: string | undefined) => any; }) => {
+  export const getUserFromCookie = async (cookies) => {
     const jwt = cookies.get(process.env.COOKIE_NAME);
     const {id} = await validateJWT(jwt.value);
     const user = await db.user.findUnique({
