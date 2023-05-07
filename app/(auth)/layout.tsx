@@ -1,7 +1,11 @@
 
 import '@/styles/global.css';
 import GlassPane from "@/components/GlassPane";
-export default function AuthRootLayout({children}) {
+interface Props {
+    children?: ReactNode
+}
+
+export default function AuthRootLayout({ children, ...props }: Props) {
     return (
         <html>
             <head/>
