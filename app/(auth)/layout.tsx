@@ -1,6 +1,7 @@
 
 import '@/styles/global.css';
 import GlassPane from "@/components/GlassPane";
+import { ReactNode } from 'react';
 interface Props {
     children?: ReactNode
 }
