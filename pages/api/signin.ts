@@ -29,13 +29,13 @@ export default async function signin(req: NextApiRequest, res: NextApiResponse) 
                 })
             )
             res.status(200)
-            res.end()
+            res.json({})
         } else {
             res.status(401);
             res.json({ error: "Invalid login" });
         }
     } else {
         res.status(402);
-        res.end();
+        res.json({});
       }
 }
