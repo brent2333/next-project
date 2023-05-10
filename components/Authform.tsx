@@ -89,6 +89,7 @@ const registerContent = {
                     </div>
                   )}
                   <div className="mb-8">
+                    <p>Hello. This is the result of going through a course on <a href="https://frontendmasters.com/">Frontend Masters</a> on NextJs. It's a work in progress and does not really function. It's a foundation that I may build on as time permits. React w Typescript/Postgres/Prisma deployed on Vercel</p>
                     <div className="text-lg mb-4 ml-2 text-black/50">Email</div>
                     <Input
                       required
